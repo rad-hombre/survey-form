@@ -1,0 +1,30 @@
+/*#email:invalid {
+    font-size: 3em;
+    color: red;
+}
+
+
+#email:placeholder-shown
+
+#email:placeholder {
+
+}
+
+*/
+
+
+main {
+    width: 80vw;
+    margin: 10vh auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > * {
+    margin: 5px;
+    padding: 5px;
+}
