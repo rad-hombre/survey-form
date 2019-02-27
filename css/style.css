@@ -1,21 +1,47 @@
+/* Can style when email invalid */
 /*#email:invalid {
     font-size: 3em;
     color: red;
 }
-
-
-#email:placeholder-shown
-
-#email:placeholder {
-
-}
-
 */
 
-
 main {
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    padding: 10px;
+    border-radius: 2px;
+    border-top: 6px solid #40a4f4;
+}
+
+input[type='submit'] {
+background-color: #40a4f4;
+color: white;
+border-radius: 7px;
+border: 10px solid #40a4f4;
+font-weight: 600;
+}
+
+main, footer {
     width: 80vw;
     margin: 10vh auto;
+}
+
+/* Inset box shadow? */
+/* input {
+    background: hsl(0, 0%, 97%); */
+    box-shadow: inset 2px 4px  hsla(0, 0%, 0%, 0.28);
+    /* box-shadow: 2px 4px  hsla(0, 0%, 0%, 0.28);  COOl
+} */
+
+label {
+    font-weight: 700;
+}
+
+fieldset label {
+    font-weight: 500;
+}
+
+footer {
+    text-align: right;
 }
 
 form {
@@ -28,3 +54,19 @@ form > * {
     margin: 5px;
     padding: 5px;
 }
+
+@media (min-width: 1000px){
+
+    #name::placeholder {
+    text-align: center;
+    }
+
+    #email::placeholder {
+    text-align: center;
+    }
+
+    #number::placeholder {
+    text-align: center;
+    }
+}
+

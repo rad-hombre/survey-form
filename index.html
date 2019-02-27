@@ -40,8 +40,6 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Please fill out the survey.</p>
 
-
-
     <form action="" id="survey-form">
 
       <label for="name" id="name-label">Name:</label>
@@ -50,49 +48,40 @@
       <label for="email" id="email-label">Email:</label>
       <input type="email" id="email" placeholder="Enter email address here..." pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required>
 
-
-
-
       <label for="number" id="number-label">Number:</label>
       <input type="number" name="" id="number" min="0" max="100" placeholder="42">
 
-
+      <!-- Dropdown  -->
       <select name="" id="dropdown">
         <option value="1">One</option>
         <option value="2">Two</option>
         <option value="3">Three</option>
       </select>
 
-
-      <p>Which is your favorite?</p>
+      <!-- Radio Buttons  -->
+      <label for="group1">Which is your favorite?</label>
       <fieldset id="group1">
         <input type="radio" value="Apple" name="group1"> <label for="Apple">Apple</label>
         <input type="radio" value="Orange" name="group1"> <label for="Orange">Orange</label>
-
       </fieldset>
-
-
-
       <fieldset id="group2">
         <input type="radio" value="Cat" name="group2"> <label for="Cat">Cat</label>
         <input type="radio" value="Dog" name="group2"> <label for="Dog">Dog</label>
       </fieldset>
 
-
-
-
+      <!-- Checkboxes -->
       <div>
         <input type="checkbox" name="Enable JS" value="enable-js" id="enable-js"> <label for="enable-js">Enable JS</label>
       </div>
-
       <div>
         <input type="checkbox" name="send-survey" value="send-survey" id="send-survey"> <label for="send-survey">Email me
           survey results when completed.</label>
       </div>
 
-
+      <!-- Additional Comments -->
       <textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
 
+      <!-- Submit button -->
       <input type="submit" value="Submit" id="submit">
 
 
@@ -101,9 +90,10 @@
 
   </main>
 
-  <footer></footer>
+  <footer>Survey Form &copy; 2019 Matthew Orndoff  </footer>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </body>
 
 </html>
