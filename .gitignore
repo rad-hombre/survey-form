@@ -1,6 +1,7 @@
 
-# Created by https://www.gitignore.io/api/node
-# Edit at https://www.gitignore.io/?templates=node
+# survey-form
+Archive
+Inspiration
 
 ### Node ###
 # Logs
@@ -83,5 +84,3 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
-
-# End of https://www.gitignore.io/api/node
