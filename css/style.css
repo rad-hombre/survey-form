@@ -1,11 +1,36 @@
+:root {
+  --border-bottom: #969696;
+  --darkColor: #aaa;
+  --baseColor: #dddddd;
+  --lightColor: #e5e5e5;
+  --submit-button: #4bb04f;
+}
+
+html {
+  background-color: var(--lightColor);
+  color: #323232;
+}
+
 main {
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
   padding: 10px;
   border-radius: 2px;
-  border-top: 6px solid #40a4f4;
   width: 80vw;
   max-width: 600px;
   margin: 10vh auto;
+
+  border-radius: 25px;
+  background-color: var(--baseColor);
+  box-shadow: 20px 20px 60px #bcbcbc, -20px -20px 60px #fefefe;
+}
+
+main #title,
+main p {
+  text-align: center;
+}
+
+main #title {
+  font-size: 2.5rem;
 }
 
 label {
@@ -28,16 +53,43 @@ form > * {
 }
 
 input[type="submit"] {
-  background-color: #40a4f4;
+  background-color: var(--submit-button);
   color: white;
   border-radius: 7px;
-  border: 10px solid #40a4f4;
+  border: 10px solid var(--submit-button);
   font-weight: 600;
 }
 
-/* input[type="text"] {
-  background-color: #bada55;
-} */
+input[type="text"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid var(--border-bottom);
+  background-color: var(--baseColor);
+}
+
+input[type="text"]::selection,
+input[type="email"]::selection,
+input[type="number"]::selection,
+textarea::selection {
+  background-color: var(--submit-button);
+}
+
+input[type="email"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid var(--border-bottom);
+  background-color: var(--baseColor);
+}
+
+input[type="number"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid var(--border-bottom);
+  background-color: var(--baseColor);
+}
 
 /* Can style when email invalid */
 /* #email:invalid {
