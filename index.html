@@ -43,19 +43,15 @@
 
       <form action="" id="survey-form">
         <label for="name" id="name-label">Name</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="Enter name here..."
-          required
-        />
+        <input type="text" id="name" placeholder="First Last" required />
 
         <label for="email" id="email-label">Email</label>
         <input
           type="email"
           id="email"
-          placeholder="Enter email address here..."
+          placeholder="name@domain.com"
           pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+          validate[required,custom[email]]
           required
         />
 
@@ -85,10 +81,14 @@
           <label for="Orange">Orange</label>
         </fieldset>
         <fieldset id="group2">
-          <input type="radio" value="Cat" name="group2" />
-          <label for="Cat">Cat</label>
-          <input type="radio" value="Dog" name="group2" />
-          <label for="Dog">Dog</label>
+          <label for="Cat">
+            <input type="radio" value="Cat" name="group2" />
+            Cat</label
+          >
+          <label for="Dog">
+            <input type="radio" value="Dog" name="group2" />
+            Dog</label
+          >
         </fieldset>
 
         <!-- Checkboxes -->

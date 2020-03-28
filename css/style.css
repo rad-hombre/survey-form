@@ -2,7 +2,7 @@
   --border-bottom: #969696;
   --darkColor: #aaa;
   --baseColor: #dddddd;
-  --lightColor: #e5e5e5;
+  --lightColor: #fafafa;
   --submit-button: #4bb04f;
 }
 
@@ -10,6 +10,7 @@ html {
   background-color: var(--lightColor);
   color: #323232;
   font-family: "Inter", sans-serif;
+  line-height: 1.6;
 }
 
 main {
@@ -22,7 +23,15 @@ main {
 
   border-radius: 25px;
   background-color: var(--baseColor);
-  box-shadow: 20px 20px 60px #bcbcbc, -20px -20px 60px #fefefe;
+  /* box-shadow: 20px 20px 60px #bcbcbc, -20px -20px 60px #fefefe; */
+
+  padding: 40px;
+  background: #fff;
+  border-radius: 20px;
+  margin: 60px auto;
+
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 main #title,
@@ -35,22 +44,37 @@ main #title {
 }
 
 label {
-  font-weight: 700;
+  font-weight: 600;
+  /* padding: 10px; */
 }
 
 fieldset label {
   font-weight: 500;
 }
 
+/* radio button styling  */
+
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 form > * {
   margin: 5px;
-  padding: 5px;
+  /* padding: 5px; */
+}
+
+#name-label,
+#email-label,
+#number-label {
+  padding-left: 0px;
+  font-weight: 800;
+  font-size: 1.1rem;
+
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
 }
 
 input[type="submit"] {
@@ -65,41 +89,57 @@ input[type="text"] {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 3px solid var(--border-bottom);
-  background-color: var(--baseColor);
+  border-bottom: 2px solid var(--border-bottom);
+  /* background-color: var(--baseColor); */
+  height: 32px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+
+  padding-top: 0px;
 }
 
-input[type="text"]::selection,
+/* input[type="text"]::selection,
 input[type="email"]::selection,
 input[type="number"]::selection,
 textarea::selection {
   background-color: var(--submit-button);
+} */
+
+fieldset {
+  border: none;
 }
 
 input[type="email"] {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 3px solid var(--border-bottom);
-  background-color: var(--baseColor);
+  border-bottom: 2px solid var(--border-bottom);
+  /* background-color: var(--baseColor); */
+  height: 32px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+
+  padding-top: 0px;
 }
 
 input[type="number"] {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 3px solid var(--border-bottom);
-  background-color: var(--baseColor);
+  border-bottom: 2px solid var(--border-bottom);
+  /* background-color: var(--baseColor); */
+
+  height: 32px;
+  margin-top: 0px;
+  margin-bottom: 25px;
 }
 
 /* Can style when email invalid */
 /* #email:invalid {
-  font-size: 3em;
-  color: red;
-} */
+  /* color: royalblue */
 
 @media (min-width: 1000px) {
-  #name::placeholder {
+  /* #name::placeholder {
     text-align: center;
   }
   #email::placeholder {
@@ -107,5 +147,5 @@ input[type="number"] {
   }
   #number::placeholder {
     text-align: center;
-  }
+  } */
 }
