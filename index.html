@@ -24,18 +24,15 @@
     <link rel="stylesheet" href="css/morndoff.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- JS -->
-    <script src="js/script.js"></script>
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
 
   <body>
-    <header>
+    <!-- <header>
       <nav></nav>
-    </header>
+    </header> -->
 
     <main>
       <h1 id="title">Survey Form</h1>
@@ -62,7 +59,7 @@
           id="number"
           min="0"
           max="100"
-          placeholder="42"
+          placeholder="00000"
         />
 
         <!-- Dropdown  -->
@@ -75,20 +72,18 @@
         <!-- Radio Buttons  -->
         <label for="group1">Which is your favorite?</label>
         <fieldset id="group1">
-          <input type="radio" value="Apple" name="group1" />
+          <input type="radio" value="Apple" id="Apple" name="group1" />
           <label for="Apple">Apple</label>
-          <input type="radio" value="Orange" name="group1" />
+          <input type="radio" value="Orange" id="Orange" name="group1" />
           <label for="Orange">Orange</label>
         </fieldset>
+
+        <label for="group2">Big dick?</label>
         <fieldset id="group2">
-          <label for="Cat">
-            <input type="radio" value="Cat" name="group2" />
-            Cat</label
-          >
-          <label for="Dog">
-            <input type="radio" value="Dog" name="group2" />
-            Dog</label
-          >
+          <input type="radio" value="Yes" id="Yes" name="group2" />
+          <label for="Yes"> Yes</label>
+          <input type="radio" value="No" id="No" name="group2" />
+          <label for="No"> No</label>
         </fieldset>
 
         <!-- Checkboxes -->
