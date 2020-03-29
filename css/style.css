@@ -16,12 +16,12 @@ html {
 main {
   padding: 40px;
   margin: auto;
-  /* border-top: 6px solid #40A4FF; */
+  border-top: 6px solid #a076f1;
   width: 80vw;
   max-width: 600px;
   background-color: var(--baseColor);
   background: #fff;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
 }
