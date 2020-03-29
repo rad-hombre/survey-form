@@ -10,13 +10,13 @@ html {
   background-color: var(--lightColor);
   color: #323232;
   font-family: "Inter", sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 main {
   padding: 40px;
   margin: auto;
-  border-top: 6px solid #a076f1;
+  border-top: 6px solid #5b72ea;
   width: 80vw;
   max-width: 600px;
   background-color: var(--baseColor);
@@ -89,11 +89,21 @@ input[type="checkbox"] + label {
 }
 
 input[type="submit"] {
-  background-color: var(--submit-button);
-  color: white;
+  background-color: inherit;
   border-radius: 7px;
-  border: 10px solid var(--submit-button);
+  /* border: 10px solid var(--submit-button); */
+  border: 1px solid var(--border-bottom);
   font-weight: 600;
+  height: 40px;
+  /* transition: color 0.1s ease-in; */
+  transition: background 0.1s ease-in;
+}
+
+input[type="submit"]:hover {
+  background-color: #21d4fd;
+  background: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  color: var(--lightColor);
+  border: none;
 }
 
 input[type="text"] {
