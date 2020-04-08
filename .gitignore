@@ -1,3 +1,7 @@
+# Survey-form ignore 
+.vscode/
+css/normalize-v8.0.1/
+
 
 # survey-form
 Archive
@@ -84,3 +88,7 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+
+
+
