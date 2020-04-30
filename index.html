@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <meta name="description" content="Blank Site" />
+    <meta name="author" content="Matthew Orndoff" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" href="css/normalize-v8.0.1/normalize.css" /> -->
+    <link rel="stylesheet" href="css/morndoff.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- <header>
+      <nav></nav>
+    </header> -->
+
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out the survey.</p>
+
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name </label>
+        <input type="text" id="name" placeholder="First Last" required />
+
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="name@domain.com"
+          pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+          validate[required,custom[email]]
+          required
+        />
+
+        <label for="number" id="number-label"
+          >How are you feeling, on a scale of 0-100?</label
+        >
+        <input
+          type="number"
+          name=""
+          id="number"
+          min="0"
+          max="100"
+          placeholder="000"
+        />
+
+        <!-- Dropdown  -->
+        <label for="dropdown"
+          >Who is your favorite Lord of the Rings character?</label
+        >
+        <select name="" id="dropdown">
+          <option value="1">Frodo</option>
+          <option value="2">Ghandalf</option>
+          <option value="3">Legolas</option>
+          <option value="4">Aragorn</option>
+          <option value="5">Sauron</option>
+        </select>
+
+        <!-- Radio Buttons  -->
+        <label for="group1">Which is your favorite kind of fruit?</label>
+        <fieldset id="group1">
+          <input type="radio" value="Apple" id="Apple" name="group1" />
+          <label for="Apple">Apple</label>
+          <input type="radio" value="Orange" id="Orange" name="group1" />
+          <label for="Orange">Orange</label>
+          <input type="radio" value="Mango" id="Mango" name="group1" />
+          <label for="Mango">Mango</label>
+        </fieldset>
+
+        <label for="group2">What is your gender?</label>
+        <fieldset id="group2">
+          <input type="radio" value="Male" id="Male" name="group2" />
+          <label for="Male"> Male</label>
+          <input type="radio" value="Female" id="Female" name="group2" />
+          <label for="Female"> Female</label>
+          <input type="radio" value="Neither" id="Neither" name="group2" />
+          <label for="Neither">How dare you...</label>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <div>
+          <input
+            type="checkbox"
+            name="Enable JS"
+            value="enable-js"
+            id="enable-js"
+          />
+          <label for="enable-js">Enable JS</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="email-me"
+            value="email-me"
+            id="email-me"
+          />
+          <label for="email-me">Email me more things like this!</label>
+        </div>
+
+        <!-- Additional Comments -->
+        <label for="additional-comments">Comments:</label>
+        <textarea
+          name="additional-comments"
+          id="additional-comments"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+
+      <!-- <div>Survey Form &copy; 2019 Matthew Orndoff</div> -->
+    </main>
+
+    <footer></footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
